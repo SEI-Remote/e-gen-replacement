@@ -5,9 +5,11 @@ import { fileURLToPath } from 'url'
 import cookieParser from 'cookie-parser'
 import logger from 'morgan'
 
+// import routers
 import { router as indexRouter } from './routes/index.js'
 import { router as usersRouter } from './routes/users.js'
 
+// set up app
 const app = express()
 
 // view engine setup
@@ -17,6 +19,7 @@ app.set(
 )
 app.set('view engine', 'ejs')
 
+// middleware
 app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
@@ -27,6 +30,7 @@ app.use(
   )
 )
 
+// mounted routers
 app.use('/', indexRouter)
 app.use('/users', usersRouter)
 
@@ -46,4 +50,6 @@ app.use(function (err, req, res, next) {
   res.render('error')
 })
 
-export { app }
+export {
+  app
+}
