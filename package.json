@@ -7,9 +7,9 @@
     "start": "node ./bin/www.js"
   },
   "dependencies": {
-    "debug": "^4.3.3",
-    "ejs": "^3.1.6",
-    "express": "^4.17.3",
+    "debug": "^4.3.4",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
     "http-errors": "^2.0.0",
     "morgan": "^1.10.0"
   }
