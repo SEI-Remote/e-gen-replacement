@@ -45,6 +45,4 @@ app.use(function (err, req, res, next) {
   res.render('error')
 })
 
-export {
-  app
-}
+export { app }
