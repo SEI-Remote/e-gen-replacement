@@ -2,7 +2,7 @@ import { Router } from 'express'
 
 const router = Router()
 
-/* GET users listing. */
+// GET localhost:3000/users
 router.get('/', function(req, res) {
   res.send('respond with a resource')
 })
